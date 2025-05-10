@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.byteutility",
+    "module": "safedatastorepreflib",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.11.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "safedatastorepreflib-1.0.aar",
+          "url": "safedatastorepreflib-1.0.aar",
+          "size": 17535,
+          "sha512": "bb82c6bcc010f14b54c2b8c2dae20578bb4f806b42286dc962969113076414c0b71598e99d5ff749ec469938540acb1112f2e90f3abc64b62cc72d65e705179c",
+          "sha256": "4dae07571dcc7160c39c78c76a1f0408b19c79e6fdef14c8340104a712ee875b",
+          "sha1": "4d727d47d1cd04d36209e882666bd56dfa314fc3",
+          "md5": "5bdf5cc7cc3be84e4f1c2490350e0eec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.datastore",
+          "module": "datastore-preferences",
+          "version": {
+            "requires": "1.1.4"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.0.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "safedatastorepreflib-1.0.aar",
+          "url": "safedatastorepreflib-1.0.aar",
+          "size": 17535,
+          "sha512": "bb82c6bcc010f14b54c2b8c2dae20578bb4f806b42286dc962969113076414c0b71598e99d5ff749ec469938540acb1112f2e90f3abc64b62cc72d65e705179c",
+          "sha256": "4dae07571dcc7160c39c78c76a1f0408b19c79e6fdef14c8340104a712ee875b",
+          "sha1": "4d727d47d1cd04d36209e882666bd56dfa314fc3",
+          "md5": "5bdf5cc7cc3be84e4f1c2490350e0eec"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "safedatastorepreflib-1.0-sources.jar",
+          "url": "safedatastorepreflib-1.0-sources.jar",
+          "size": 2262,
+          "sha512": "d33df52bdcb2c4f2947c1395b08e05321b15ef14d0197f81fb42319147eeece18f8647975a4bd57e5b7f36d2cbae1227df4217bbc2e598e7155b1be9921c9950",
+          "sha256": "37306a74c3d925def458c40abe96b7faed402454b78a0bf36ab91617cb6ee3c9",
+          "sha1": "217a415a6c24dbbb07ff7681e00eb73e3e380e52",
+          "md5": "6916a1fceaefa2481634b02c7628f40c"
+        }
+      ]
+    }
+  ]
+}
