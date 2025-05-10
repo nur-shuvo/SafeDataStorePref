@@ -5,8 +5,6 @@ A type-safe, Kotlin-friendly wrapper for Android's Jetpack DataStore Preferences
 
 [![](https://jitpack.io/v/nur-shuvo/SafeDataStorePref.svg)](https://jitpack.io/#nur-shuvo/SafeDataStorePref)
 
----
-
 ## Features
 
 - ✅ Type-safe preference storage
@@ -14,8 +12,6 @@ A type-safe, Kotlin-friendly wrapper for Android's Jetpack DataStore Preferences
 - ✅ Null-safe update operations
 - ✅ Kotlin DSL-style builder
 - ✅ Minimal boilerplate
-
----
 
 ## Installation
 
@@ -39,9 +35,8 @@ dependencies {
 }
 ```
 
----
-
 ## Usage
+<img src="photos/SafeDataStorePref-visual.png" alt="Screenshot 1" style="display: block; margin: auto;" />
 
 ### Step 1: Define your data class choosing your own serialization library (i.e Gson, Moshi, Kotlinx Serialization)
 
