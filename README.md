@@ -109,6 +109,11 @@ val currentSettings = userSettingsStore.get()
 
 ```kotlin
 val settingsFlow: Flow<UserSettings?> = userSettingsStore.getAsFlow()
+lifecycleScope.launch {
+    userSettingsStore.getAsFlow().collect { settings ->
+        // Handle the collected UserSettings object
+    }
+}
 ```
 
 ### Delete
