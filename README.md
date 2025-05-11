@@ -76,8 +76,9 @@ class UserSettingSerializer : TypedPrefSerializer<UserSettings> {
     )
 
 ```
-
----
+> **Note**  
+> Creating a `DataStore` instance with a specific name should only be done **once per process**.  
+> Multiple instances with the same name in the same process can lead to a **fatal exception**.
 
 ## Operations
 
