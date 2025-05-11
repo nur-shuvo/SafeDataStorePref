@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
-            android:name=".ExampleActivity"
+            android:name=".sample.ExampleActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.example.safedatastorepref
+package com.example.safedatastorepref.sample
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

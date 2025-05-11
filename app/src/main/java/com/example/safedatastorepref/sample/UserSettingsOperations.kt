@@ -1,13 +1,14 @@
-package com.example.safedatastorepref
+package com.example.safedatastorepref.sample
 
 import android.util.Log
 import com.byteutility.safedatastorepreflib.core.typedPrefDataStore
+import com.example.safedatastorepref.MyApplication
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class UserSettingsOperations {
 
-    private val userSettingsStore = MyApplication.context.typedPrefDataStore(
+    private val userSettingsStore = MyApplication.Companion.context.typedPrefDataStore(
         "user_settings",
         UserSettingSerializer()
     )

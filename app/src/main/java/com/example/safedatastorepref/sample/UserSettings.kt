@@ -1,4 +1,4 @@
-package com.example.safedatastorepref
+package com.example.safedatastorepref.sample
 
 import kotlinx.serialization.Serializable
 
