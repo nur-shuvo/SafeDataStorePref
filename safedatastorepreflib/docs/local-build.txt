@@ -1,0 +1,3 @@
+To local build library and publish to local test repository:
+
+./gradlew :safedatastorepreflib:publishReleasePublicationToLocalTestRepositor

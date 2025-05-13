@@ -18,7 +18,15 @@ import android.content.Context
  */
 inline fun <reified T : Any> Context.typedPrefDataStore(
     name: String,
-    serializer: TypedPrefSerializer<T>
+    serializer: TypedPrefSerializer<T>,
+    encryptionEnabled: Boolean = false
 ): TypedPrefDataStore<T> {
-    return TypedPrefDataStore(this, name, T::class.java, serializer)
+    return TypedPrefDataStore(this, name, T::class.java, serializer, encryptionEnabled)
+}
+
+inline fun <reified T : Any> Context.encryptedTypedPrefDataStore(
+    name: String,
+    serializer: TypedPrefSerializer<T>,
+): TypedPrefDataStore<T> {
+    return TypedPrefDataStore(this, name, T::class.java, serializer, true)
 }
