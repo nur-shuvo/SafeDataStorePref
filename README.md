@@ -7,8 +7,9 @@ A type-safe, Kotlin-friendly wrapper for Android's Jetpack DataStore Preferences
 
 ## Features
 
-- ✅ Type-safe preference storage
+- ✅ Type-safe preference datastore storage
 - ✅ Custom serialization support
+- ✅ Encryption support backed by Android keystore
 - ✅ Null-safe update operations
 - ✅ Kotlin DSL-style builder
 - ✅ Minimal boilerplate
@@ -75,6 +76,11 @@ class UserSettingSerializer : TypedPrefSerializer<UserSettings> {
         UserSettingSerializer()
     )
 
+// Optionally, if you want encrypted datastore,
+private val userDataStore = MyApplication.Companion.context.encryptedTypedPrefDataStore(
+        "user_data",
+        UserDataSerializer()
+    )
 ```
 > **Note**  
 > Creating a `DataStore` instance with a specific name should only be done **once per process**.  
