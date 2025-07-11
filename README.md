@@ -3,6 +3,12 @@
 
 A type-safe, Kotlin-friendly wrapper for Android's Jetpack DataStore Preferences using serialization and DSL-style configuration. Designed to simplify reading and writing custom data types without manual serialization or null checks.
 
+Why SafeDataStorePref?
+
+In my opinion, though Proto DataStore is a powerful option for data storage in Android for type safety, it can come with some development and learning overhead. The need for .proto files, code generation, and dealing with binary serialization can add complexity. Additionally, it can be rigid when handling custom data models, nullable fields, and especially when handing default values.
+
+To address these challenges, SafeDataStorePref comes in, which offers a type-safe, Kotlin-friendly easy-to-use wrapper around Android's Jetpack DataStore Preferences.
+
 [![](https://jitpack.io/v/nur-shuvo/SafeDataStorePref.svg)](https://jitpack.io/#nur-shuvo/SafeDataStorePref)
 
 ## Features
