@@ -30,7 +30,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.byteutility"
             artifactId = "safedatastorepreflib"
-            version = "1.1"
+            version = "1.2"
 
             afterEvaluate {
                 from(components["release"])
