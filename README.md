@@ -38,7 +38,7 @@ Then, add the dependency in your module `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.github.nur-shuvo:SafeDataStorePref:v1.1")
+    implementation("com.github.nur-shuvo:SafeDataStorePref:v1.2.0")
 }
 ```
 
